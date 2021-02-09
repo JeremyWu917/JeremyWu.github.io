@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://JeremyWu917.github.io</id>
+    <title>Jeremy Wu</title>
+    <updated>2021-02-09T02:42:37.019Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://JeremyWu917.github.io"/>
+    <link rel="self" href="https://JeremyWu917.github.io/atom.xml"/>
+    <subtitle>Welcome to Jeremy Wu&apos;s note libraries 😘</subtitle>
+    <logo>https://JeremyWu917.github.io/images/avatar.png</logo>
+    <icon>https://JeremyWu917.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Jeremy Wu</rights>
+    <entry>
+        <title type="html"><![CDATA[About]]></title>
+        <id>https://JeremyWu917.github.io/post/about/</id>
+        <link href="https://JeremyWu917.github.io/post/about/">
+        </link>
+        <updated>2021-02-09T02:29:48.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>Welcome to my website, it's glad to see you my friend🤝</p>
+</blockquote>
+<h2 id="about-this-site">🏠 About this site</h2>
+<p>This site uses the free and open source <a href="https://gridea.dev/" target="_blank">Gridea</a> as a template and is hosted on <a href="https://github.com/JeremyWu917" target="_blank">GitHub</a> for personal, non-commercial use only, to document the daily life of programmers.</p>
+<h2 id="who-is-the-blogger">👨‍💻 Who is the blogger</h2>
+<p>Jeremy Wu, male, September 1989, working in software development, currently working in IIE as a software development manager position. Passionate about Microsoft technology stack and open source. My technical contributions are mainly hosted on <a href="https://www.cnblogs.com/jeremywucnblog/" target="_blank">cnblog</a> and <a href="https://github.com/JeremyWu917" target="_blank">GitHub</a>, welcome to read, re-post, comment and subscribe, thanks.</p>
+<h2 id="hobbies-and-interests">⛹ Hobbies and Interests</h2>
+<ul>
+<li>Sci-Fi Movies👓</li>
+<li>Basketball 🏀</li>
+<li>Marathon 🏃</li>
+<li>Self-driving tour 🚙</li>
+<li>Programming 🐵👩‍💻</li>
+<li>Spending time with family 👨‍👨‍👦‍👦</li>
+</ul>
+<h2 id="contact-me">📬 Contact me</h2>
+<h4 id="text-me-message">Text me message</h4>
+<ul>
+<li><a href="mailto://Jeremy_Wu@iiewx.com">Jeremy_Wu@iiewx.com</a></li>
+<li><a href="mailto://Jeremy.Wu@foxmail.com">Jeremy.Wu@foxmail.com</a></li>
+</ul>
+<h4 id="wechat">WeChat</h4>
+<ul>
+<li>ID: JeremyWu-IoT</li>
+</ul>
+]]></content>
+    </entry>
+</feed>
