@@ -1,123 +1,592 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jeremy Wu</title>
-<link rel="shortcut icon" href="https://JeremyWu917.github.io/favicon.ico?v=1612838555190">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://JeremyWu917.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Jeremy Wu - Atom Feed" href="https://JeremyWu917.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+﻿<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>吴增杰的个人主页</title>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
 
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
 
-    <meta name="description" content="Welcome to Jeremy Wu's note libraries 😘" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://JeremyWu917.github.io">
-  <img class="avatar" src="https://JeremyWu917.github.io/images/avatar.png?v=1612838555190" alt="">
-  </a>
-  <h1 class="site-title">
-    Jeremy Wu
-  </h1>
-  <p class="site-description">
-    Welcome to Jeremy Wu's note libraries 😘
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          Home
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          Archive
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          Tag
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          About
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/JeremyWu917/" target="_blank">
-          <i class="ri-github-line"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
+<body>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://JeremyWu917.github.io/post/about/">
-        <h2 class="post-title">About</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-02-09
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://JeremyWu917.github.io/tag/GGEH48Id2/" class="post-tag">
-            # About
-          </a>
-        
-      </div>
-      
-        <a href="https://JeremyWu917.github.io/post/about/" class="post-feature-image" style="background-image: url('https://JeremyWu917.github.io/post-images/about.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
+  <div class="page-wrapper default-version">
+    <!-- Preloader -->
+    <div class="preloader"></div>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+    <div class="page-background">
+      <div class="image-1"><img src="images/icons/shape/icon-1.png" alt=""></div>
+      <div class="image-7"><img src="images/icons/shape/icon-7.png" alt=""></div>
+      <canvas id="canvas"></canvas>
+    </div>
 
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">&nbsp;Gridea</a>&nbsp;CopyRight@2021<a href="https://github.com/JeremyWu917/" target="_blank">&nbsp;JeremyWu</a>&nbsp;❤❤❤
-  <a class="rss" href="https://JeremyWu917.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <div class="container">
+        <!--Nav Outer-->
+        <div class="nav-outer clearfix">
+          <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+          <!-- Main Menu -->
+          <nav class="main-menu">
+            <div class="navbar-header">
+              <!-- Toggle Button -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
 
+            <div class="navbar-collapse collapse scroll-nav clearfix">
+              <ul class="navigation clearfix">
+                <li class="current"><a href="#home">主页</a></li>
+                <li><a href="#about">个人信息</a></li>
+                <li><a href="#tools">擅长技术</a></li>
+                <li><a href="#resume">工作经历</a></li>
+                <li><a href="#services">项目经验</a></li>
+                <li><a href="#work">开源项目</a></li>
+                <li><a href="#honor">荣誉证书</a></li>
+                <li><a href="#blog">博客文章</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Main Menu End-->
+        </div>
+        <!--Nav Outer End-->
       </div>
     </div>
-  </body>
+
+    <div class="card-outer">
+      <div class="scroll-box">
+        <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+          <div class="card-wrapper">
+            <div class="author-info" style="background:url(images/background/3.jpg) no-repeat top center">
+              <div class="image"><img src="images/resource/user.jpeg" alt=""></div>
+              <div class="author">
+                <h3>吴增杰</h3>
+                <div class="designation">
+                  你好，我是
+                  <div class="typing-title">
+                    <p>一名<strong> 全栈工程师</strong></p>
+                    <p>一名<strong> 技术追求者</strong></p>
+                    <p>一名<strong> 运动爱好者</strong></p>
+                    <p>一名<strong> 开源爱好者</strong></p>
+                  </div>
+                  <span class="typed-title"></span>
+                </div>
+              </div>
+              <div class="link-btn">
+                <a href="#" class="theme-btn btn-style-one">下载简历</a>
+              </div>
+              <ul class="social-icon-two">
+                <li><a href="https://github.com/jeremywu917" target="_blank"><span class="fa fa-github"></span></a></li>
+                <li><a href="#"><span class="fa fa-weixin"></span></a></li>
+                <li><a href="mailto:jeremy.wu@foxmail.com"><span class="fa fa-envelope-o"></span></a></li>
+              </ul>
+            </div>
+            <div class="card-inner-box">
+              <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                <ul class="main-menu">
+                  <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
+                  <li><a href="#about"><i class="flaticon-social"></i>个人信息</a></li>
+                  <li><a href="#tools"><i class="flaticon-tools"></i>擅长技术</a></li>
+                  <li><a href="#resume"><i class="flaticon-curriculum"></i>工作经历</a></li>
+                  <li><a href="#services"><i class="flaticon-layers-1"></i>项目经验</a></li>
+                  <li><a href="#work"><i class="fa fa-github"></i>开源项目</a></li>
+                  <li><a href="#honor"><i class="iconfont icon-rongyu"></i>荣誉证书</a></li>
+                  <li><a href="#blog"><i class="flaticon-blog"></i>博客文章</a></li>
+                </ul>
+              </header>
+
+              <!-- card item -->
+              <div class="card-home card-item active" id="home" style="background-image:url(images/background/1.jpg)">
+
+                <div class="card-inner wow fadeInUp" data-wow-duration="2s">
+                  <div class="image"><img src="images/resource/user.jpeg" alt=""></div>
+                  <div class="author">
+                    <h3>吴增杰</h3>
+                    <div class="designation">
+                      你好，我是
+                      <div class="typing-title">
+                        <p>一名<strong> 全栈工程师</strong></p>
+                        <p>一名<strong> 技术追求者</strong></p>
+                        <p>一名<strong> 运动爱好者</strong></p>
+                        <p>一名<strong> 开源爱好者</strong></p>
+                      </div>
+                      <span class="typed-title"></span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      主攻全栈开发，7年+项目管理、软件开发经验。
+                      半导体智能制造、自动化装备、智慧工厂、数字工厂方向解决方案。
+                      带领技术团队利用最新技术解决业务快速发展过程中的各种业务场景问题。
+                      主要项目包括 CIM、MES、EAP、BI、PDM、PLM、OA、SCM、B2B、EDI 等。
+                      主要技术栈包括 Delphi、WinForm、WPF、NetFramework、NET
+                      Core、Python、Vue、HTML、CSS、JavaScript、TypeScript、Node、WebAPI、Oracle、MySQL、SqlServer、PostgreSQL等。
+                      热衷开源，GitHub 活跃用户，良好的英语听说读写能力，坚持学习和技术分享。
+                    </p>
+                  </div>
+                  <div class="link-btn">
+                    <a href="https://www.cnblogs.com/jeremywucnblog" target="_blank"
+                      class="theme-btn btn-style-one">CnBlog</a>
+                    <a href="https://github.com/jeremywu917" target="_blank" class="theme-btn btn-style-two">GitHub</a>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end item -->
+
+              <!-- card item -->
+              <div class="card-about card-item" id="about">
+                <div class="card-inner">
+                  <h4 class="title">个人信息</h4>
+                  <div class="info-list col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="list-style-one">
+                          <li><strong>姓名:</strong> 吴增杰 Jeremy Wu</li>
+                          <li><strong>微信:</strong> JeremyWu-IoT</li>
+                          <li><strong>地址:</strong> 江苏省无锡市</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-style-one">
+                          <li><strong>邮箱:</strong> <a target="_blank"
+                              href="mailto:jeremy.wu@foxmail.com">jeremy.wu@foxmail.com</a></li>
+                          <li><strong>github:</strong> <a target="_blank"
+                              href="https://github.com/jeremywu917">github.com/jeremywu917</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="education col-md-12">
+                    <div class="row">
+                      <h4 class="title">教育背景</h4>
+                      <div class="school">
+                        <a target="_blank" href="http://www.hbitu.cn/index.php"><img class="logo"
+                            src="images/school-logo.png" alt=""></a>
+                        <div>
+                          <strong>淮北师范大学信息学院 , 本科</strong> 电子信息工程
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- card item -->
+              <div class="card-about card-item" id="tools">
+                <div class="card-inner">
+                  <h4 class="title">擅长技术</h4>
+                  <div class="col-md-12">
+                    <div></div>
+                    <div class="row">
+                      <!-- About Block -->
+                      <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                        <div class="inner-box">
+                          <div class="graph-outer">
+                            <input type="text" class="dial" data-fgColor="#9147ff" data-bgColor="#f5f5f5"
+                              data-width="90" data-height="90" data-linecap="normal" value="80">
+                            <div class="inner-text count-box"><span class="count-text" data-stop="80"
+                                data-speed="2000"></span>%</div>
+                          </div>
+                          <h3>前端</h3>
+                        </div>
+                      </div>
+                      <!-- About Block -->
+                      <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                        <div class="inner-box">
+                          <div class="graph-outer">
+                            <input type="text" class="dial" data-fgColor="#ff5e7e" data-bgColor="#f5f5f5"
+                              data-width="90" data-height="90" data-linecap="normal" value="80">
+                            <div class="inner-text count-box"><span class="count-text" data-stop="80"
+                                data-speed="2000"></span>%</div>
+                          </div>
+                          <h3>构建/工具</h3>
+                        </div>
+                      </div>
+
+                      <!-- About Block -->
+                      <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                        <div class="inner-box">
+                          <div class="graph-outer">
+                            <input type="text" class="dial" data-fgColor="#ffc713" data-bgColor="#f5f5f5"
+                              data-width="90" data-height="90" data-linecap="normal" value="90">
+                            <div class="inner-text count-box"><span class="count-text" data-stop="90"
+                                data-speed="2000"></span>%</div>
+                          </div>
+                          <h3>后端</h3>
+                        </div>
+                      </div>
+                      <!-- About Block -->
+                      <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                        <div class="inner-box">
+                          <div class="graph-outer">
+                            <input type="text" class="dial" data-fgColor="#51dbc3" data-bgColor="#f5f5f5"
+                              data-width="90" data-height="90" data-linecap="normal" value="80">
+                            <div class="inner-text count-box"><span class="count-text" data-stop="80"
+                                data-speed="2000"></span>%</div>
+                          </div>
+                          <h3>项目管理</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skill-info">
+                        <h4 class="sub-title">前端:</h4>
+                        <div class="labels">
+                          <span class="label label-info">HTML</span>
+                          <span class="label label-info">CSS</span>
+                          <span class="label label-info">Sass</span>
+                          <span class="label label-info">Less</span>
+                          <span class="label label-info">JavaScript</span>
+                          <span class="label label-info">TypeScript</span>
+                          <span class="label label-info">UniApp</span>
+                          <span class="label label-info">ElementUI</span>
+                          <span class="label label-info">Vue</span>
+                        </div>
+                        <h4 class="sub-title">构建/工具:</h4>
+                        <div class="labels">
+                          <span class="label label-info">Webpack</span>
+                          <span class="label label-info">Gulp</span>
+                          <span class="label label-info">Git</span>
+                        </div>
+                        <h4 class="sub-title">服务端:</h4>
+                        <div class="labels">
+                          <span class="label label-info">NetCore</span>
+                          <span class="label label-info">NodeJS</span>
+                          <span class="label label-info">WebApi</span>
+                          <span class="label label-info">Oracle</span>
+                          <span class="label label-info">SqlServer</span>
+                          <span class="label label-info">PostgreSQL</span>
+                          <span class="label label-info">IIS</span>
+                          <span class="label label-info">Nginx</span>
+                        </div>
+                        <h4 class="sub-title">项目管理:</h4>
+                        <div class="labels">
+                          <span class="label label-info">MSProject</span>
+                          <span class="label label-info">Teambition</span>
+                          <span class="label label-info">OpenProject</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <!-- end item -->
+
+              <!-- card item -->
+              <div class="card-resume card-item" id="resume">
+                <div class="card-inner">
+                  <h4 class="title">工作经历</h4>
+                  <!--Column-->
+                  <div class="timeline-column col-md-12">
+                    <div class="row clearfix">
+                      <div class="inner">
+                        <!--Timeline Block-->
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>软件研发经理</h4>
+                            <div class="date"><span>2020.05-至今</span> / <a href="https://github.com/wxiie" target="_blank">无锡惟勤智能装备有限公司</a>
+                            </div>
+                            <div class="text">
+                              主攻全栈开发，负责公司信息化建设的基础技术框架搭建、项目开发、环境部署，以及项目发布。
+                              对接公司设备上位机开发团队，为终端客户提供智慧车间、智慧工厂、数字工厂解决方案。
+                              对接市场部售前团队，提供竞标方案。
+                              负责集团网络安全建设，为子公司提供技术支持。
+                              项目包括公司信息系统的PC、移动端网站、管理后台网站，微信开发，ERP、PLM、PDM、CIM、EAP、AutoReport、AutoPrint、BI、ASMS等的全栈开发。
+                              带领软件团队高效完成业务模块开发，制定前端团队开发的流程。
+                              参与项目全流程讨论，提出建设性意见，让项目开发更加合理、科学化，提高整个团队的交付效率和质量。
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>软件开发工程师</h4>
+                            <div class="date"><span>2014.08-2020.05</span> / <a target="_blank" href="https://www.jcetglobal.com/">长电科技（宿迁）有限公司</a>
+                            </div>
+                            <div class="text">
+                              主攻全栈开发，负责全厂信息系统的基础技术框架搭建、项目开发、环境部署，以及项目发布。
+                              项目包括公司 CIM、MES、ERP、EAP、B2B、AutoRecipe、AutoPrint、AutoReport、SPMS、EDI 系统的全栈开发。
+                              带领软件团队高效完成业务模块开发，制定团队开发的流程、实施方案以及技术文档的撰写。
+                              参与项目全流程讨论，提出建设性意见，让项目开发更加合理、科学化，提高整个团队的交付效率和质量。
+                              历时四年建成全公司的智慧化工厂，获得江苏省“两化”融合示范企业称号。
+                            </div>
+                          </div>
+                        </div>
+                        <!--Timeline Block-->
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>嵌入式开发工程师</h4>
+                            <div class="date"><span>2014.04-2014.06(大四实习)</span> / <a target="_blank" href="https://yh57961119.dyq.cn/">上海耀亨电源设备有限公司</a>
+                            </div>
+                            <div class="text">
+                              嵌入式开发（ARM、FPGA）。优化现有产品程序，协助研发经理开发新产品以及开发流程梳理和开发技术文档撰写等。
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- card item -->
+              <div class="card-resume card-item" id="services">
+                <div class="card-inner">
+                  <h4 class="title">项目经验</h4>
+                  <!--Column-->
+                  <div class="timeline-column  col-md-12">
+                    <div class="row clearfix">
+                      <div class="inner">
+                        <!--Timeline Block-->
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>捷买士商城小程序</h4>
+                            <div class="date"> 项目描述：用户可以通过分享小程序锁粉，当粉丝下单时获取佣金。</div>
+                            <div class="text">
+                              <div>技术栈:小程序+gulp+scss</div>
+                              <ul>
+                                <li>构建小程序开发框架，实现七牛云自动上传+图片压缩+scss+封装wx.request+实时编译+多环境配置技术方案，
+                                  克服了小程序原生开发的不方便，极速研发、研发成本大大降低。</li>
+                                <li>实现了登录授权、分享、商品、购物车、下单、支付、个人中心等主要功能。</li>
+                                <li>实现了生成canvas海报图，签到大转盘，红包雨，九宫格翻牌等营销功能。</li>
+                                <li>编程高度组件化，优化登录逻辑，优化了图片请求慢，时效性不高的接口进行数据缓存，canvas海报图缓存。</li>
+                                <li>带领前端团队高效完成业务模块开发，产品上线后不断的维护与重构，优化用户体验及性能。</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>商城后台管理系统</h4>
+                            <div class="date"> 项目描述：主要用于管理用户，商品，订单，供应商信息应用。</div>
+                            <div class="text">
+                              <div> 技术栈: vue+elementUI+axios+vuex+webpack</div>
+                              <ul>
+                                <li>vue+elementUI+webpack构建开发框架，快速开发标准版后台。</li>
+                                <li>实现了用户管理,权限管理(动态路由),用户管理，优惠券管理，订单管理等主要功能。</li>
+                                <li>开发热点图，运费模板等组件。</li>
+                                <li>二次封装图片上传组件，表格组件结合mixin实现搜索翻页功能等，大幅度减少代码量。</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>微信H5商城</h4>
+                            <div class="date">项目描述：配合App分享微信H5商城，用于微信用户快速下单。</div>
+                            <div class="text">
+                              <div>技术栈: vue+elementUI+axios+vuex+webpack</div>
+                              <ul>
+                                <li>vue+vantUI+webpack开发微信商城。</li>
+                                <li>实现了H5微信授权，微信分享，支付，商品购物车，我的等主要功能。</li>
+                                <li>构建vue+webpack+vantui+sass+rem移动端开发解决方案。</li>
+                                <li>实现了线上环境使用CDN,优化了首屏加载速度,提升用户体验。</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4>nodeJS文章发布系统</h4>
+                            <div class="date">项目描述：CMS文章发布系统，包括前后台开发。</div>
+                            <div class="text">
+                              <div>技术栈: NodeJS+koa2+pm2+vue+elementUI+axios+vuex+webpack</div>
+                              <ul>
+                                <li>后端采用 NodeJS+koa2+开发,vue开发管理后台以及H5页面,pm2发布前后端项目。</li>
+                                <li>NodeJS实现接口身份验证JWT认证登录</li>
+                                <li>管理后台实现了用户模块，分类模块，文章模块，搜索等主要功能。H5实现文章分类及文章详情浏览。</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timeline-block">
+                          <div class="inner-box">
+                            <h4> 多个官网项目 </h4>
+                            <div class="text">
+                              <div>技术栈:php+TweenMax+jquery+css+animation</div>
+                              <ul>
+                                <li><a href="http://www.iplus-sh.com/">IPLUS官网</a>：使用TweenMax动画完成复杂动画需求</li>
+                                <li>碧云文体发展中心:官方新闻发布系统全站开发，负责前端以及后台PHP二次开发PHPCMS新闻发布系统。</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- card item -->
+              <div class="card-projects card-item" id="work">
+                <div class="card-inner">
+                  <h4 class="title">开源项目</h4>
+                  <div class="row">
+                    <div class="services-block col-md-12">
+                      <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-pen-tool"></span></div>
+                        <h4><a href="https://github.com/sunniejs/sol-weapp">Sol Weapp <img
+                              src="https://img.shields.io/github/stars/sunniejs/sol-weapp.svg?style=social" /></a>
+                        </h4>
+                        <div class="text">微信小程序,商城营销组件库。红包雨、大转盘、九宫格翻牌等营销组件，导航栏、筛选页、高度业务化组件。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="services-block col-md-12">
+                      <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-folder"></span></div>
+                        <h4><a href="https://github.com/sunniejs/vue_canvas_poster">Vue Canvas Poster <img
+                              src="https://img.shields.io/github/stars/sunniejs/vue_canvas_poster.svg?style=social" /></a>
+                        </h4>
+                        <div class="text">一个通过 css 属性画 canvas 图片的轻量级的 vue 组件 (A lightweight vue components use canvas
+                          draw image by css properties.)</div>
+                      </div>
+                    </div>
+                    <div class="services-block col-md-12">
+                      <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-computer"></span></div>
+                        <h4><a href="https://github.com/sunniejs/vue-wechat-auth">Vue Wechat Auth <img
+                              src="https://img.shields.io/github/stars/sunniejs/vue-wechat-auth.svg?style=social" /></a>
+                        </h4>
+                        <div class="text">vue微信网页授权解决方案</div>
+                      </div>
+                    </div>
+
+                    <div class="services-block col-md-12">
+                      <div class="inner-box">
+                        <div class="icon-box"><span class="icon flaticon-layers-1"></span></div>
+                        <h4><a href="https://github.com/sunniejs/weapp-gulp">Weapp Gulp <img
+                              src="https://img.shields.io/github/stars/sunniejs/weapp-gulp.svg?style=social" /></a>
+                        </h4>
+                        <div class="text">基于 gulp4.0 实现七牛云自动上传+图片压缩+scss+封装 wx.request+实时编译+多环境配置，脚手架开发小程序</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- card item -->
+              <div class="card-honor card-item" id="honor">
+                <div class="card-inner">
+                  <h4 class="title">证书</h4>
+                  <div class="col-md-12">
+                    <ul class="list-style-two">
+                      <li><span class="iconfont icon-rongyu"></span>大学英语四级 <span class="level">通过</span></li>
+                      <li><span class="iconfont icon-rongyu"></span>全国计算机二级 C 语言 <span class="level">通过</span></li>
+                      <li><span class="iconfont icon-rongyu"></span>江苏省“英才计划”优秀学员 <span class="level">通过</span></li>
+                    </ul>
+                  </div>
+                  <h4 class="title">荣誉</h4>
+                  <div class="col-md-12">
+                    <ul class="list-style-two">
+                      <li><span class="iconfont icon-rongyu"></span>国家励志奖学金 <span class="level">国家级</span></li>
+                      <li><span class="iconfont icon-rongyu"></span>全国大学生电子设计大赛省二等奖 <span class="level">省级</span></li>
+                      <li><span class="iconfont icon-rongyu"></span>一等奖学金 <span class="level">校级</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- card item -->
+              <div class="card-blog card-item" id="blog">
+                <div class="card-inner">
+                  <h4 class="title">优秀博文</h4>
+                  <div class="news-block">
+                    <div class="inner-box">
+                      <div class="image"><img src="images/resource/blog-1.jpg" alt="">
+                        <div class="overlay"><a target="blank" class="link-btn"
+                            href="https://segmentfault.com/a/1190000019488056"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                      <div class="lower-content">
+                        <h4><a target="blank" href="https://segmentfault.com/a/1190000019488056">vue微信网页授权最终解决方案</a>
+                        </h4>
+                        <div class="tags">微信开发</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-block">
+                    <div class="inner-box">
+                      <div class="image"><img src="images/resource/blog-2.jpg" alt="">
+                        <div class="overlay"><a target="blank" class="link-btn"
+                            href="https://juejin.im/post/5d0af5d2f265da1b614ffd72"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                      <div class="lower-content">
+                        <h4><a target="blank" href="https://juejin.im/post/5d0af5d2f265da1b614ffd72">electron
+                            vue桌面应用入门实例</a></h4>
+                        <div class="tags">electron开发</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-block">
+                    <div class="inner-box">
+                      <div class="image"><img src="images/resource/blog-3.jpg" alt="">
+                        <div class="overlay"><a target="blank" class="link-btn"
+                            href="https://juejin.im/post/5cfefc73f265da1bba58f9f7"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                      <div class="lower-content">
+                        <h4><a target="blank" href="https://juejin.im/post/5cfefc73f265da1bba58f9f7">vuecli3 vant rem
+                            移动端框架方案</a></h4>
+                        <div class="tags">vue开发</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!--End pagewrapper-->
+
+
+  <script src="js/jquery.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/knob.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/mousemoveparallax.js"></script>
+  <script src="js/pagenav.js"></script>
+  <script src="js/jquery-type.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/particle-alone.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
