@@ -508,11 +508,15 @@ i.fa {
   left: 0;
   top: 0;
   z-index: 99;
-  border-right: 1px solid #ececec;
+  /* border-right: 1px solid #ececec; */
   padding: 13px 0;
   padding-right: 24px;
 }
 
+.mobile-menu .logo-img {
+  width: 30px;
+  height: 30px;
+}
 /*** 
 
 ====================================================================
